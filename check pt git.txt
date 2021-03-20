@@ -1,0 +1,91 @@
+Microsoft Windows [version 10.0.19041.804]
+(c) 2020 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\asus\Desktop\CHECK PT GIT>mkdir learn_git_again
+
+C:\Users\asus\Desktop\CHECK PT GIT>cd learn_git_again
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>cd.>third.txt
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git init
+Initialized empty Git repository in C:/Users/asus/Desktop/CHECK PT GIT/learn_git_again/.git/
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git add third.txt
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git commit -m"adding third.txt"
+[master (root-commit) cde0613] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git log
+commit cde0613e5eaca7d2332d2778655424cdabbecb83 (HEAD -> master)
+Author: ASUS <aatidelkouki@gmail.com>
+Date:   Sat Mar 20 07:36:35 2021 +0100
+
+    adding third.txt
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>cd.>fourth.txt
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git add fourth.txt
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git commit -m"adding fourth.txt"
+[master ecc9752] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git rm third.txt
+rm 'third.txt'
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git add .
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git commit -m"removing third.txt"
+[master fca7955] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git log
+commit fca7955468cc24322ec1e3a0fcbcfbf8924e425d (HEAD -> master)
+Author: ASUS <aatidelkouki@gmail.com>
+Date:   Sat Mar 20 07:39:57 2021 +0100
+
+    removing third.txt
+
+commit ecc9752d07e2416f614ebc32ff183afa69c96d45
+Author: ASUS <aatidelkouki@gmail.com>
+Date:   Sat Mar 20 07:38:37 2021 +0100
+
+    adding fourth.txt
+
+commit cde0613e5eaca7d2332d2778655424cdabbecb83
+Author: ASUS <aatidelkouki@gmail.com>
+Date:   Sat Mar 20 07:36:35 2021 +0100
+
+    adding third.txt
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git config --global core.pager cat
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=aatidelkouki@gmail.com
+core.pager=cat
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+C:\Users\asus\Desktop\CHECK PT GIT\learn_git_again>
